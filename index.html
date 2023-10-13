@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!---------------------- Bootstrap Cdn---------------------->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <!-- <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg"> -->
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/BC-powder.css">
+      <title>Camp Lejeune</title>
+   </head>
+   <body>
+      <section>
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="container-fluid">
+                  <div class="pad-med">
+                     <a class="navbar-brand" href="#"><img src="./assets/images/2023-09-cropped-OnlyClassActions-250x34.png" alt="./assets/images/2023-09-cropped-OnlyClassActions-250x34.png"></a>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </section>
+      <section class="verify-info-section">
+         <container>
+            <div class="verify-info-main">
+               <div class="verify-title">
+                  <h2>Please Verify Your<span> Information Below</span></h2>
+                  <!-- <img src="./assets/images/verify-info-line.png" alt="verify-info-line"> -->
+               </div>
+               <form id="plmForm">
+                  <div class="verify-info-detail-main">
+                     <input type="hidden" id="sfield" value="abc123" name="shortcode">
+                     <div class="v-info-detail">
+                        <label class="form-label" for="firstName">First Name</label>
+                        <input class="form-control" id="firstName" type="text" placeholder="Enter First Name" name="firstName"/>
+                     </div>
+                     <div class="v-info-detail">
+                        <label class="form-label" for="lastName">Last Name</label>
+                        <input class="form-control" id="lastName" type="text" placeholder="Enter Last Name" name="lastName" />
+                     </div>
+                  </div>
+                  <div class="verify-info-detail-main">
+                     <div class="v-info-detail">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input class="form-control" id="phone" type="text" placeholder="Enter Phone Number" name="phone"/>
+                     </div>
+                     <div class="v-info-detail">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input class="form-control" id="email" type="email" placeholder="Enter Email Address" name="email"/>
+                        <input class="form-control" id="claimType" type="hidden"aria-label="Claim Type" name="claimType"/>
+                     </div>
+                  </div>
+                  <div class="verify-info-detail-main">
+                        <!-- <div id="TrustedForm-container" class="TrustedForm hidden">
+                            <input type="hidden" id="TrustedForm" name="myTrustedForm" value="TrustedForm Goes Here">
+                        </div> -->
+                        <div id="TrustedForm-Script">
+                            <!-- TrustedForm -->
+                            <script type="text/javascript">
+                                (function() {
+                                var tf = document.createElement('script');
+                                tf.type = 'text/javascript'; tf.async = true;
+                                tf.src = ("https:" == document.location.protocol ? 'https' : 'http') + "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" + new Date().getTime() + Math.random();
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+                                })();
+                            </script>
+                            <noscript>
+                                <img src="https://api.trustedform.com/ns.gif" />
+                            </noscript>
+                            <!-- End TrustedForm -->
+                        </div>
+
+
+                        <div id="Jornaya-container" class="Jornaya hidden">
+                            <input type="hidden" id="Jornaya" name="myJornaya" value="Jornaya Goes Here">
+                        </div>
+                        <div id="Jornaya-Script">
+                            <script type="text/javascript">
+                                function myCallbackFunctio(token){
+                                var field = document.getElementById('Jornaya');
+                                if (field) {
+                                field.setAttribute('value',token);}
+                                }
+                            </script>
+                            <script id="LeadiDscript" type="text/javascript">
+                                (function() {
+                                var s = document.createElement('script');
+                                s.id = 'LeadiDscript_campaign';
+                                s.type = 'text/javascript';
+                                s.async = true;
+                                s.src = '//create.lidstatic.com/campaign/2463107a-5399-21cd-5fe7-c53985b5e6e9.js?snippet_version=2&callback=myCallbackFunctio';
+                                var LeadiDscript = document.getElementById('LeadiDscript');
+                                LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+                                })();
+                            </script>
+                            <noscript>
+                                <img src='//create.leadid.com/noscript.gif?lac=2E7D8938-A68A-1EAE-086C-2E888E66FD96&lck=2463107a-5399-21cd-5fe7-c53985b5e6e9&snippet_version=2' />
+                            </noscript>
+                        </div>
+                  </div>
+                  <span class="elementor-field-option">
+                  <input type="checkbox" id="checkid" value="test" />
+                  <label style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142); word-wrap:break-word" for="checkid">By clicking the 'submit' button, you agree to be called/texted at the number provided above by PLM about our services even if your telephone number is currently listed on any state, federal or corporate Do Not Call registry. Your consent is not required to purchase any good or services. You also agree to the terms of use and privacy policy. Message and data rates may apply. Message frequency varies.</label>	
+                  </span>
+                  <div class="veriy-info-btn">
+                     <button type="submit">Submit</button>
+                  </div>
+               </form>
+            </div>
+         </container>
+      </section>
+      <section class="hero-section contan">
+         <div class="hero-bg pd-50" style="margin-bottom: 0;">
+            <div class="container">
+               <div class="hero-top">
+                  <i class="fas fa-gavel" style="color: #cbb17a;"></i>
+                  <p style="color:#cbb17a">STAND UP FOR WHAT'S RIGHT</p>
+               </div>
+               <div class="roundup-main">
+                  <div class="hero-txt">
+                     <br>
+                     <h3>Protecting Your Rights and Seeking Justice
+                     </h3>
+                     <br>
+                     <p style="color:#000; font-family:Sans-serif;font-size:16px;font-weight: 300px;">Car accidents can be life-altering events, leaving victims with physical injuries, emotional trauma, and financial burdens. If you or a loved one has been involved in a car accident caused by someone else’s negligence, you may have the right to seek compensation through a car accident lawsuit. This webpage aims to provide you with essential information about car accident lawsuits, helping you understand your rights and the legal process involved in pursuing justice.</p>
+                  </div>
+                  <div class="roundup-im">
+                     <img src="./assets/images/pexels-ekaterina-bolovtsova-6077326.jpg" alt="pexels-ekaterina-bolovtsova-6077326.jpg" width="67px">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="know-section contan">
+         <div class="container">
+            <div class="know-main">
+               <div class="verify-title">
+                  <h2>Key Steps in a<span> Car Accident Lawsuits</span></h2>
+               </div>
+               <section class="elementor-section elementor-inner-section elementor-element elementor-element-d14a179 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d14a179" data-element_type="section">
+                  <div class="know-cards">
+                     <div class="k-card1">
+                        <span>
+                        <i class="fa-solid fa-briefcase-medical fa-2xl" style="color: #cbb17a;"></i>
+                        </span>
+                        <div>
+                           <p style="font-size: large;" class="elementor-icon-box-title">
+                              Seek Medical Attention	
+                           <p style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142)">Your health should be your top priority after an accident. Seek immediate medical attention, even if your injuries seem minor. This not only ensures your well-being but also creates crucial documentation for your case.</p>
+                        </div>
+                     </div>
+                     <div class="k-card1">
+                        <span>
+                        <i class="fas fa-handshake fa-2xl" style="color: #cbb185;"></i>
+                        </span>
+                        <p style="font-size: large;" class="elementor-icon-box-title">
+                           Gather Evidence                        
+                        <p style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142)">Collect evidence at the accident scene, if possible. Take photographs, gather witness information, and make notes about the accident while details are fresh in your memory.</p>
+                     </div>
+                     <div class="k-card1">
+                        <span>
+                        <i class="fas fa-file-alt fa-2xl" style="color: #cbb185;"></i>
+                        </span>
+                        <p style="font-size: large;" class="elementor-icon-box-title">
+                           Gather Evidence                        
+                        <p style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142)">Collect evidence at the accident scene, if possible. Take photographs, gather witness information, and make notes about the accident while details are fresh in your memory.</p>
+                     </div>
+                  </div>
+               </section>
+               <section>
+                  <div class="know-cards">
+                     <div class="k-card1">
+                        <span>
+                        <i class="fa-solid fa-user-tie fa-2xl" style="color: #cbb185;"></i>
+                        </span>
+                        <div>
+                           <p style="font-size: large;" class="elementor-icon-box-title">
+                              Consult an Attorney	
+                           <p style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142)">It's highly advisable to consult with an experienced personal injury attorney. They can help you understand your legal rights, evaluate the strength of your case, and guide you through the legal process.</p>
+                        </div>
+                     </div>
+                     <div class="k-card1">
+                        <span>
+                        <i class="fa-solid fa-file-signature fa-2xl" style="color: #cbb185;"></i>
+                        </span>
+                        <p style="font-size: large;" class="elementor-icon-box-title">
+                           File a Claim                       
+                        <p style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142)">Your attorney will help you file a claim with the at-fault party's insurance company. They will negotiate on your behalf to reach a fair settlement.</p>
+                     </div>
+                     <div class="k-card1">
+                        <span>
+                        <i class="fa-solid fa-hourglass fa-2xl" style="color: #cbb185;"></i>
+                        </span>
+                        <p style="font-size: large;" class="elementor-icon-box-title">
+                           Lawsuit Filing                       
+                        <p style="font-family: sans-serif; font-size: 14px; color:Rgb(103, 118, 142)">If a fair settlement cannot be reached, your attorney may recommend filing a lawsuit. This involves drafting a complaint, initiating the legal process, and preparing for court proceedings.</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </section>
+      <section class="roundup-class-section contan">
+         <div class="container">
+            <div class="verify-title mx-ust">
+               <h2 class="elementor-heading-title elementor-size-default">Why You Need an  <span style="color: #CBB17A;">Attorney</span></h2>
+            </div>
+            <div class="roundup-main">
+               <div class="roundup-im">
+                  <img src="./assets/images/pexels-august-de-richelieu-4427630.jpg" alt="camp-law-sec">
+               </div>
+               <div class="roundup-txt">
+                  <p style="color:#000; font-family:Sans-serif;font-size:16px;font-weight: 400px;">Car accident lawsuits can be complex, and insurance companies often try to minimize payouts. An experienced attorney can:</p>
+                  <br>
+                  <ul>
+                     <li>Evaluate the true value of your claim.</li>
+                     <li>Negotiate with insurance companies on your behalf.</li>
+                     <li>Gather evidence to strengthen your case.</li>
+                     <li>Represent you in court if necessary.</li>
+                     <li>Maximize your chances of receiving fair compensation.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="roundup-timeline-section contan">
+         <div class="container">
+            <div class="verify-title">
+               <h2 class="elementor-heading-title elementor-size-default">Conclusion <span style="color: #CBB17A;">Car Accident Lawsuit</span></h2>
+            </div>
+            <br>
+            <div class="roundup-timeline-main">
+               <p style="font-family: sans-serif; color:#67768E; font-size:15px; text-align:center">A car accident lawsuit can be a path to justice and financial recovery after a traumatic event. If you’ve been injured in a car accident due to someone else’s negligence, it’s crucial to understand your rights and seek legal guidance. Contact an experienced personal injury attorney to help you navigate the legal process and secure the compensation you deserve. Your well-being and financial stability may depend on it.</p>
+            </div>
+         </div>
+      </section>
+      <section class="footer-section contan">
+         <div class="container">
+            <div class="foo-1">
+               <a style="margin: auto;padding-bottom: 40px;" href="#"><img src="./assets/images/2023-09-cropped-OnlyClassActions-250x34.png"
+                  alt="footer-logo"></a>
+            </div>
+            <div class="footer-bar">
+               <div class="f-bar-link" style="margin: auto;">
+                  <p>© 2023 Only Class Action. All rights reserved.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ************************Scripts Start Here*********************************-->
+      <!--------------------------------- Jquery --------------------------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-------------------------------- Jquery Ends------------------------------->
+      <!--------------------------------- Popper Js ------------------------------->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
+      <!--------------------------------- Popper Js Ends----------------------------->
+      <!--------------------------------- Bootstrap 5 cdn ---------------------------->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <!------------------------------------ Bootstrap 5 cdn Ends--------------------->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script src="./assets/js/script.js"></script>
+   </body>
+</html>
