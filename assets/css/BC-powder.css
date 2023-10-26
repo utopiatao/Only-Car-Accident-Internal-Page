@@ -147,6 +147,9 @@
     text-align: center;
     
 }
+.sub-btn:hover {
+    background: black;
+}
 .k-card1:hover {
     background: rgb(255, 235, 196);
 }
