@@ -30,6 +30,39 @@ p {
   max-width: 1280px !important;
 }
 
+/* Hide the default checkbox visually but keep it accessible */
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style for the custom checkbox */
+.custom-checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px; /* Set padding for the custom checkbox */
+  cursor: pointer;
+}
+
+.custom-checkbox label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px; /* Set width of the checkbox */
+  height: 20px; /* Set height of the checkbox */
+  border: 2px solid #ccc; /* Border color of the checkbox before checked */
+  background-color: #fff7e7; /* Background color of the checkbox */
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #98f598; /* Change background color when checked */
+  border-color: #ccc; /* Change border color when checked */
+  content: '\2714'; 
+}
+
+
 body {
   overflow-x: hidden;
 }
